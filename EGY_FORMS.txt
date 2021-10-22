@@ -1,0 +1,10 @@
+google forms:
+
+SIGNUP
+https://docs.google.com/spreadsheets/d/1TqYxYred0fbJl4bAC09w5zHg-ujpSRpZAsu3fdtI4Y4/edit#gid=0
+
+LOGIN
+https://docs.google.com/spreadsheets/d/1flfqUgy81Fuk8DwinerOoY_3YUqeB93yNHNE2L2lYmg/edit#gid=0
+
+FEEDBACK
+https://docs.google.com/spreadsheets/d/1c9_DfpTc-BFfovDoS12F3I5JsuSpCpGKsVH-0hMJPuk/edit

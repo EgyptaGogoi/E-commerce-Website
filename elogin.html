@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> login </title>
+        <link rel="stylesheet" type="text/css" href="egstyle.css">
+        <script src="https://kit.fontawesome.com/19d77944b0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="nav nav_top">
+            <div class="logo">
+                <a href="ownedheaven.html"><img src="OH_logo.jpg" width="100"></a>
+            </div>
+            <div class="nav_side">
+                <a href="eabout.html">About Us</a>
+                <a href="econtact.html">Contact</a>
+                <a href="eservice.html">Products</a>
+                <a href="esignup.html">Sign Up</a>
+                <a href="elogin.html">Login</a>
+            </div>
+        </nav>
+        <div class="login">
+            <h2>Login</h2><hr>
+            <div class="login_form">
+                <form name="login-googlesheet" method="POST">
+                    <input type="email" name="Email" placeholder="E-mail ID"><br>
+                    <input type="password" name="Password" placeholder="Password"><br>
+                    <a href="ownedheaven.html"><button type="submit">Login</button></a>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="flogo">
+                <a href="ownedheaven.html"><img src="OH_logo.jpg" width="150" alt="Logo"></a>
+            </div>
+            <div class="page">
+                <h3>Pages</h3>
+                <a href="eabout.html">About us</a> |
+                <a href="eservice.html">Services</a> |
+                <a href="elogin.html">Login</a> |
+                <a href="esignup.html">Sign Up</a> |
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a> |
+                <a href="">Terms of Use</a> |
+                <a href="">Refund Policy</a> |
+            </div>
+            <div class="socials">
+                <h3>Follow us</h3>
+                <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a> |
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> |
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a> |
+                <a href=""><i class="fa fa-telegram" aria-hidden="true"></i></a> |
+            </div>
+            <div class="contact">
+                <h3>Contact us</h3>
+                <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a> |
+                <a href=""><i class="fa fa-phone" aria-hidden="true"></i></a> |
+                <a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a> |
+            </div>
+            <hr>
+            <p>COPYRIGHT &copy; 2021 OWNED HEAVEN All rights reserved.</p>
+        </footer>
+        <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWS1qsL48UGDB8ehUZUtzy1hqbISR4rVG52HE-1lh-KZu0sjk9QhMD49RQcDyXNGMixA/exec'
+            const form = document.forms['login-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You're logged in!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+        <script type="text/javascript">
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxyb0lWVn3Gr9st82rxLQmwl8tdPEOK6FqToEq2IvBi0X2k0wn9MAw29fAjR9BaKz8Www/exec'
+            const form = document.forms['signup-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You're signed in!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html> 
